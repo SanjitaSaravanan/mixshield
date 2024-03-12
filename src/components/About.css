@@ -1,0 +1,16 @@
+.max-height-300 {
+    max-height: 400px; 
+    max-width: 100%;
+  }
+
+.quotes{
+    font-size: 2rem;
+    top: 41%;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+.text-fix{
+    text-decoration: none;
+  }
