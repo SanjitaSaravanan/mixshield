@@ -19,7 +19,8 @@ function Contact() {
         .then((result) => {
           console.log(formData);
           emailjs.sendForm('service_sprxhui', 'template_ypqez6w', formElement, 'Nsp0dZwRIknVLgjaR', {fullName},{message})
-          .then(alert('Message sent successfully!'));
+          .then(alert('Thanks for contacting MixShield and our team will assist you further !!'));
+          window.location.href = "/";
         }, (error) => {
           console.log(error.text);
           alert('An error occurred while sending the message. Please try again later.');

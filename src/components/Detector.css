@@ -1,0 +1,32 @@
+.diamond-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .diamond {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 255, 0, 0.8);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: splash 2s ease-out infinite;
+  }
+  
+  @keyframes splash {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+  }
+  

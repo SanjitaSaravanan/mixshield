@@ -1,6 +1,9 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
-import image1 from '/src/assets/construction.png'; 
+import image1 from '/src/assets/construction.png';
+import image2 from '/src/assets/mixdesign.jpg'; 
+import image3 from '/src/assets/advanced.jpg'; 
+import image4 from '/src/assets/custom.jpg'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import { Link } from 'react-router-dom';
@@ -62,7 +65,7 @@ function Home() {
             <div className="service-container d-flex">
                     <div className={`service ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() => setIsFlipped(true)} onMouseLeave={() => setIsFlipped(false)}>
                         <div className="card-front">
-                            <img src="./src/assets/mixdesign.jpg" alt="Concrete Mix Designs" className="img-fix" />
+                            <img src={image2} alt="Concrete Mix Designs" className="img-fix" />
                         </div>
                         <div className="card-back">
                           <div>
@@ -76,7 +79,7 @@ function Home() {
 
                     <div className={`service ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() => setIsFlipped(true)} onMouseLeave={() => setIsFlipped(false)}>
                       <div className="card-front">
-                        <img src="./src/assets/advanced.jpg" alt="Advanced Technologies" className="img-fix" />
+                        <img src={image3} alt="Advanced Technologies" className="img-fix" />
                       </div>
                       <div className="card-back">
                         <div>
@@ -90,7 +93,7 @@ function Home() {
 
                     <div className={`service ${isFlipped ? 'flipped' : ''}`} onMouseEnter={() => setIsFlipped(true)} onMouseLeave={() => setIsFlipped(false)}>
                       <div className="card-front">
-                        <img src="./src/assets/custom.jpg" alt="Custom Solutions" className="img-fix" />
+                        <img src={image4} alt="Custom Solutions" className="img-fix" />
                       </div>
                       <div className="card-back">
                         <div>
